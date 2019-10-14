@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 // reactstrap components
 import {
@@ -9,52 +9,52 @@ import {
   Carousel as ReactCarousel,
   CarouselItem,
   CarouselIndicators,
-  CarouselCaption
-} from "reactstrap";
+  CarouselCaption,
+} from 'reactstrap'
 
 // core components
 
 const items = [
   {
-    src: require("assets/img/soroush-karimi.jpg"),
-    altText: "Somewhere",
-    caption: "Somewhere"
+    src: require('assets/img/soroush-karimi.jpg'),
+    altText: 'Somewhere',
+    caption: 'Somewhere',
   },
   {
-    src: require("assets/img/federico-beccari.jpg"),
-    altText: "Somewhere else",
-    caption: "Somewhere else"
+    src: require('assets/img/federico-beccari.jpg'),
+    altText: 'Somewhere else',
+    caption: 'Somewhere else',
   },
   {
-    src: require("assets/img/joshua-stannard.jpg"),
-    altText: "Here it is",
-    caption: "Here it is"
-  }
-];
+    src: require('assets/img/joshua-stannard.jpg'),
+    altText: 'Here it is',
+    caption: 'Here it is',
+  },
+]
 
 function Carousel() {
-  const [activeIndex, setActiveIndex] = React.useState(0);
-  const [animating, setAnimating] = React.useState(false);
+  const [activeIndex, setActiveIndex] = React.useState(0)
+  const [animating, setAnimating] = React.useState(false)
   const onExiting = () => {
-    setAnimating(true);
-  };
+    setAnimating(true)
+  }
   const onExited = () => {
-    setAnimating(false);
-  };
+    setAnimating(false)
+  }
   const next = () => {
-    if (animating) return;
-    const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1;
-    setActiveIndex(nextIndex);
-  };
+    if (animating) return
+    const nextIndex = activeIndex === items.length - 1 ? 0 : activeIndex + 1
+    setActiveIndex(nextIndex)
+  }
   const previous = () => {
-    if (animating) return;
-    const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1;
-    setActiveIndex(nextIndex);
-  };
+    if (animating) return
+    const nextIndex = activeIndex === 0 ? items.length - 1 : activeIndex - 1
+    setActiveIndex(nextIndex)
+  }
   const goToIndex = newIndex => {
-    if (animating) return;
-    setActiveIndex(newIndex);
-  };
+    if (animating) return
+    setActiveIndex(newIndex)
+  }
   return (
     <>
       <div className="section pt-o" id="carousel">
@@ -62,11 +62,7 @@ function Carousel() {
           <Row>
             <Col className="ml-auto mr-auto" md="8">
               <Card className="page-carousel">
-                <ReactCarousel
-                  activeIndex={activeIndex}
-                  next={next}
-                  previous={previous}
-                >
+                <ReactCarousel activeIndex={activeIndex} next={next} previous={previous}>
                   <CarouselIndicators
                     items={items}
                     activeIndex={activeIndex}
@@ -74,26 +70,19 @@ function Carousel() {
                   />
                   {items.map(item => {
                     return (
-                      <CarouselItem
-                        onExiting={onExiting}
-                        onExited={onExited}
-                        key={item.src}
-                      >
+                      <CarouselItem onExiting={onExiting} onExited={onExited} key={item.src}>
                         <img src={item.src} alt={item.altText} />
-                        <CarouselCaption
-                          captionText={item.caption}
-                          captionHeader=""
-                        />
+                        <CarouselCaption captionText={item.caption} captionHeader="" />
                       </CarouselItem>
-                    );
+                    )
                   })}
                   <a
                     className="left carousel-control carousel-control-prev"
                     data-slide="prev"
                     href="#pablo"
                     onClick={e => {
-                      e.preventDefault();
-                      previous();
+                      e.preventDefault()
+                      previous()
                     }}
                     role="button"
                   >
@@ -105,8 +94,8 @@ function Carousel() {
                     data-slide="next"
                     href="#pablo"
                     onClick={e => {
-                      e.preventDefault();
-                      next();
+                      e.preventDefault()
+                      next()
                     }}
                     role="button"
                   >
@@ -118,9 +107,9 @@ function Carousel() {
             </Col>
           </Row>
         </Container>
-      </div>{" "}
+      </div>{' '}
     </>
-  );
+  )
 }
 
-export default Carousel;
+export default Carousel

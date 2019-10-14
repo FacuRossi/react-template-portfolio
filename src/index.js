@@ -1,12 +1,12 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import { BrowserRouter, Route, Redirect, Switch } from "react-router-dom";
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { BrowserRouter, Route, Redirect, Switch } from 'react-router-dom'
 
-import "assets/css/bootstrap.min.css";
-import "assets/scss/paper-kit.scss";
-import "assets/demo/demo.css";
+import 'assets/css/bootstrap.min.css'
+import 'assets/scss/paper-kit.scss'
+import 'assets/demo/demo.css'
 
-import Portfolio from "./views/Portfolio";
+import Portfolio from './views/Portfolio'
 
 ReactDOM.render(
   <BrowserRouter>
@@ -15,5 +15,5 @@ ReactDOM.render(
       <Redirect to="/index" />
     </Switch>
   </BrowserRouter>,
-  document.getElementById("root")
-);
+  document.getElementById('root'),
+)

@@ -1,7 +1,7 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react'
+import { Link } from 'react-router-dom'
 // nodejs library that concatenates strings
-import classnames from "classnames";
+import classnames from 'classnames'
 
 // reactstrap components
 import {
@@ -11,45 +11,35 @@ import {
   NavItem,
   NavLink,
   Nav,
-  Container
-} from "reactstrap";
+  Container,
+} from 'reactstrap'
 
 function Navbar() {
-  const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
-  const [navbarCollapse, setNavbarCollapse] = React.useState(false);
+  const [navbarColor, setNavbarColor] = React.useState('navbar-transparent')
+  const [navbarCollapse, setNavbarCollapse] = React.useState(false)
 
   const toggleNavbarCollapse = () => {
-    setNavbarCollapse(!navbarCollapse);
-    document.documentElement.classList.toggle("nav-open");
-  };
+    setNavbarCollapse(!navbarCollapse)
+    document.documentElement.classList.toggle('nav-open')
+  }
 
   React.useEffect(() => {
     const updateNavbarColor = () => {
-      if (
-        document.documentElement.scrollTop > 299 ||
-        document.body.scrollTop > 299
-      ) {
-        setNavbarColor("");
-      } else if (
-        document.documentElement.scrollTop < 300 ||
-        document.body.scrollTop < 300
-      ) {
-        setNavbarColor("navbar-transparent");
+      if (document.documentElement.scrollTop > 299 || document.body.scrollTop > 299) {
+        setNavbarColor('')
+      } else if (document.documentElement.scrollTop < 300 || document.body.scrollTop < 300) {
+        setNavbarColor('navbar-transparent')
       }
-    };
+    }
 
-    window.addEventListener("scroll", updateNavbarColor);
+    window.addEventListener('scroll', updateNavbarColor)
 
     return function cleanup() {
-      window.removeEventListener("scroll", updateNavbarColor);
-    };
-  });
+      window.removeEventListener('scroll', updateNavbarColor)
+    }
+  })
   return (
-    <ReactNavbar
-      className={classnames("fixed-top", navbarColor)}
-      color-on-scroll="300"
-      expand="lg"
-    >
+    <ReactNavbar className={classnames('fixed-top', navbarColor)} color-on-scroll="300" expand="lg">
       <Container>
         <div className="navbar-translate">
           <NavbarBrand
@@ -63,8 +53,8 @@ function Navbar() {
           </NavbarBrand>
           <button
             aria-expanded={navbarCollapse}
-            className={classnames("navbar-toggler navbar-toggler", {
-              toggled: navbarCollapse
+            className={classnames('navbar-toggler navbar-toggler', {
+              toggled: navbarCollapse,
             })}
             onClick={toggleNavbarCollapse}
           >
@@ -73,11 +63,7 @@ function Navbar() {
             <span className="navbar-toggler-bar bar3" />
           </button>
         </div>
-        <Collapse
-          className="justify-content-end"
-          navbar
-          isOpen={navbarCollapse}
-        >
+        <Collapse className="justify-content-end" navbar isOpen={navbarCollapse}>
           <Nav navbar>
             <NavItem>
               <NavLink to="/index" tag={Link}>
@@ -87,7 +73,7 @@ function Navbar() {
             <NavItem>
               <NavLink
                 data-placement="bottom"
-                href="https://twitter.com/CreativeTim?ref=creativetim"
+                href="https://twitter.com/"
                 target="_blank"
                 title="Follow us on Twitter"
               >
@@ -98,29 +84,18 @@ function Navbar() {
             <NavItem>
               <NavLink
                 data-placement="bottom"
-                href="https://www.facebook.com/CreativeTim?ref=creativetim"
+                href="https://www.instagram.com/"
                 target="_blank"
-                title="Like us on Facebook"
+                title="Follow us on LinkedIn"
               >
-                <i className="fa fa-facebook-square" />
-                <p className="d-lg-none">Facebook</p>
+                <i className="fa fa-linkedin" />
+                <p className="d-lg-none">LinkedIn</p>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink
                 data-placement="bottom"
-                href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
-                target="_blank"
-                title="Follow us on Instagram"
-              >
-                <i className="fa fa-instagram" />
-                <p className="d-lg-none">Instagram</p>
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                data-placement="bottom"
-                href="https://www.github.com/CreativeTimOfficial?ref=creativetim"
+                href="https://www.github.com/"
                 target="_blank"
                 title="Star on GitHub"
               >
@@ -132,7 +107,7 @@ function Navbar() {
         </Collapse>
       </Container>
     </ReactNavbar>
-  );
+  )
 }
 
-export default Navbar;
+export default Navbar

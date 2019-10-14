@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 import {
   Button,
@@ -9,8 +9,8 @@ import {
   InputGroup,
   Container,
   Row,
-  Col
-} from "reactstrap";
+  Col,
+} from 'reactstrap'
 
 const Contact = () => {
   return (
@@ -44,11 +44,7 @@ const Contact = () => {
               </Col>
             </Row>
             <label>Message</label>
-            <Input
-              placeholder="Tell us your thoughts and feelings..."
-              type="textarea"
-              rows="4"
-            />
+            <Input placeholder="Tell us your thoughts and feelings..." type="textarea" rows="4" />
             <Row>
               <Col className="ml-auto mr-auto" md="4">
                 <Button className="btn-fill" color="danger" size="lg">
@@ -60,7 +56,7 @@ const Contact = () => {
         </Col>
       </Row>
     </Container>
-  );
-};
+  )
+}
 
-export default Contact;
+export default Contact
