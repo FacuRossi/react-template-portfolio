@@ -1,19 +1,3 @@
-/*!
-
- =========================================================
- * Paper Kit React - v1.0.0 based on Paper Kit - v2.2.0
- =========================================================
-
- * Product Page: https://www.creative-tim.com/product/paper-kit-2
- * Copyright 2019 Creative Tim (http://www.creative-tim.com)
-
- * Designed by www.invisionapp.com Coded by www.creative-tim.com
-
- =========================================================
-
- * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
- */
 /*      light colors - used for select dropdown         */
 /* ========================================================================
  * bootstrap-switch - v3.3.2
@@ -4514,7 +4498,7 @@ License - nucleoapp.com/license/
   margin-bottom: 0; }
 
 .page-header {
-  background-color: #B2AFAB;
+  background-color: #b2afab;
   background-position: center center;
   background-size: cover;
   min-height: 100vh;
@@ -4564,7 +4548,8 @@ License - nucleoapp.com/license/
 .landing-section .column {
   padding: 0 75px 0 25px; }
 
-.team-player .img-circle, .team-player .img-thumbnail {
+.team-player .img-circle,
+.team-player .img-thumbnail {
   display: block;
   margin-top: 50px;
   margin-left: auto;
@@ -4585,7 +4570,7 @@ License - nucleoapp.com/license/
   z-index: 2; }
 
 #register-navbar a {
-  color: #FFF; }
+  color: #fff; }
 
 .register-background .container {
   margin-top: 11%;
@@ -4601,13 +4586,13 @@ License - nucleoapp.com/license/
   color: #FFFFFF; }
 
 .register-footer .fa-heart {
-  color: #EB5E28; }
+  color: #eb5e28; }
 
 .register-card label {
   margin-top: 15px; }
 
 .register-card .title {
-  color: #B33C12;
+  color: #b33c12;
   text-align: center; }
 
 .register-card .btn {
@@ -4652,7 +4637,7 @@ License - nucleoapp.com/license/
   margin: 0 auto;
   position: relative;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   display: block; }
   .title-brand .type {
     position: absolute;
@@ -4669,18 +4654,18 @@ License - nucleoapp.com/license/
   font-size: 8em;
   font-weight: 700;
   margin: 0;
-  color: #FFFFFF;
+  color: #ffffff;
   background: #fbf8ec;
-  background: -moz-linear-gradient(top, #FFFFFF 35%, #4e6773 100%);
-  background: -webkit-linear-gradient(top, #FFFFFF 35%, #4e6773 100%);
-  background: -ms-linear-gradient(top, #FFFFFF 35%, #4e6773 100%);
-  background: linear-gradient(to bottom, #FFFFFF 35%, #4e6773 100%);
+  background: -moz-linear-gradient(top, #ffffff 35%, #4e6773 100%);
+  background: -webkit-linear-gradient(top, #ffffff 35%, #4e6773 100%);
+  background: -ms-linear-gradient(top, #ffffff 35%, #4e6773 100%);
+  background: linear-gradient(to bottom, #ffffff 35%, #4e6773 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
 .presentation-subtitle {
   font-size: 1.7em;
-  color: #FFFFFF; }
+  color: #ffffff; }
 
 .category-absolute {
   position: absolute;
@@ -4690,7 +4675,7 @@ License - nucleoapp.com/license/
   padding: 0 15px;
   width: 100%;
   color: rgba(255, 255, 255, 0.5); }
-  .category-absolute .creative-tim-logo {
+  .category-absolute .custom-logo {
     max-width: 140px;
     top: -2px;
     left: 3px;
@@ -4703,7 +4688,7 @@ License - nucleoapp.com/license/
   margin-left: -35%;
   margin-bottom: -50px;
   width: 110%;
-  opacity: .85; }
+  opacity: 0.85; }
   .fog-low img {
     width: 100%; }
   .fog-low.right {
@@ -4737,7 +4722,9 @@ License - nucleoapp.com/license/
 .profile-content .tab-content .tab-pane {
   min-height: 200px; }
 
-.profile-content .tab-content #tweets, .profile-content .tab-content #connections, .profile-content .tab-content #media {
+.profile-content .tab-content #tweets,
+.profile-content .tab-content #connections,
+.profile-content .tab-content #media {
   height: 100%; }
 
 .section {
@@ -5720,16 +5707,6 @@ License - nucleoapp.com/license/
   .presentation-page .section-content .image-container .area-img {
     max-width: 170px !important; } }
 
-/*! nouislider - 11.1.0 - 2018-04-02 11:18:13 */
-/* Functional styling;
-* These styles are required for noUiSlider to function.
-* You don't need to change these rules to apply your design.
-*/
-/*
-
-This file was modified by Creative-Tim
-
-*/
 .noUi-target,
 .noUi-target * {
   -webkit-touch-callout: none;
@@ -5860,9 +5837,9 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 
 .noUi-handle {
   border-radius: 3px;
-  background: #FFF;
+  background: #fff;
   cursor: default;
-  box-shadow: inset 0 0 1px #FFF, inset 0 1px 7px #EBEBEB, 0 3px 6px -3px #BBB;
+  box-shadow: inset 0 0 1px #fff, inset 0 1px 7px #ebebeb, 0 3px 6px -3px #bbb;
   -webkit-transition: 300ms ease 0s;
   -moz-transition: 300ms ease 0s;
   -ms-transition: 300ms ease 0s;
@@ -5872,13 +5849,13 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
     outline: none; }
 
 .noUi-active {
-  box-shadow: inset 0 0 1px #FFF, inset 0 1px 7px #DDD, 0 3px 6px -3px #BBB;
+  box-shadow: inset 0 0 1px #fff, inset 0 1px 7px #ddd, 0 3px 6px -3px #bbb;
   transform: scale3d(1.5, 1.5, 1); }
 
 /* Disabled state;
 */
 [disabled] .noUi-connect {
-  background: #B8B8B8; }
+  background: #b8b8b8; }
 
 [disabled].noUi-target,
 [disabled].noUi-handle,
@@ -5914,13 +5891,13 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 */
 .noUi-marker {
   position: absolute;
-  background: #CCC; }
+  background: #ccc; }
 
 .noUi-marker-sub {
-  background: #AAA; }
+  background: #aaa; }
 
 .noUi-marker-large {
-  background: #AAA; }
+  background: #aaa; }
 
 /* Horizontal layout;
 *
@@ -5983,7 +5960,7 @@ html:not([dir="rtl"]) .noUi-horizontal .noUi-handle {
 .noUi-tooltip {
   display: block;
   position: absolute;
-  border: 1px solid #D9D9D9;
+  border: 1px solid #d9d9d9;
   border-radius: 3px;
   background: #fff;
   color: #000;

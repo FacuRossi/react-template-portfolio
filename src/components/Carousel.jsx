@@ -1,21 +1,3 @@
-/*!
-
-=========================================================
-* Paper Kit React - v1.0.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/paper-kit-react
-
-* Copyright 2019 Creative Tim (https://www.creative-tim.com)
-* Licensed under MIT (https://github.com/creativetimofficial/paper-kit-react/blob/master/LICENSE.md)
-
-* Coded by Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
 import React from "react";
 
 // reactstrap components
@@ -24,7 +6,7 @@ import {
   Container,
   Row,
   Col,
-  Carousel,
+  Carousel as ReactCarousel,
   CarouselItem,
   CarouselIndicators,
   CarouselCaption
@@ -50,7 +32,7 @@ const items = [
   }
 ];
 
-function SectionCarousel() {
+function Carousel() {
   const [activeIndex, setActiveIndex] = React.useState(0);
   const [animating, setAnimating] = React.useState(false);
   const onExiting = () => {
@@ -80,7 +62,7 @@ function SectionCarousel() {
           <Row>
             <Col className="ml-auto mr-auto" md="8">
               <Card className="page-carousel">
-                <Carousel
+                <ReactCarousel
                   activeIndex={activeIndex}
                   next={next}
                   previous={previous}
@@ -131,7 +113,7 @@ function SectionCarousel() {
                     <span className="fa fa-angle-right" />
                     <span className="sr-only">Next</span>
                   </a>
-                </Carousel>
+                </ReactCarousel>
               </Card>
             </Col>
           </Row>
@@ -141,4 +123,4 @@ function SectionCarousel() {
   );
 }
 
-export default SectionCarousel;
+export default Carousel;
