@@ -1,0 +1,134 @@
+{
+  "navbar": {
+    "headerTitle": "FR",
+    "headerLinks": [
+      {
+        "name": "Home",
+        "link": "#home"
+      },
+      {
+        "name": "About",
+        "link": "#about"
+      },
+      {
+        "name": "Company",
+        "link": "#company"
+      },
+      {
+        "name": "Team",
+        "link": "#team"
+      },
+      {
+        "name": "Projects",
+        "link": "#projects"
+      },
+      {
+        "name": "Contact",
+        "link": "#contact"
+      }
+    ]
+  },
+  "main": {
+    "title": "Company Name",
+    "subtitle": "Start designing your landing page here."
+  },
+  "about": {
+    "name": "Jane Faker",
+    "job": "Music Producer",
+    "description": "An artist of considerable range, Jane Faker — the name taken by Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records all of his own music, giving it a warm, intimate feel with a solid groove structure."
+  },
+  "company": {
+    "title": "Let's talk the company",
+    "description": "This is the paragraph where you can write more details about your product. Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious, otherwise he wouldn't scroll to get here. Add a button if you want the user to see more.",
+    "sizeOfColumns": 4,
+    "knowledgeFields": [
+      {
+        "name": "Web Development",
+        "icon": "nc-icon nc-album-2",
+        "description": "Spend your time generating new ideas. You don't have to think of implementing."
+      },
+      {
+        "name": "IoT",
+        "icon": "nc-icon nc-album-2",
+        "description": "Spend your time generating new ideas. You don't have to think of implementing."
+      },
+      {
+        "name": "Machine Learning",
+        "icon": "nc-icon nc-album-2",
+        "description": "Larger, yet dramatically thinner. More powerful, but remarkably power efficient."
+      }
+    ]
+  },
+  "team": {
+    "title": "Let's talk about us",
+    "sizeOfColumns": 4,
+    "members": [
+      {
+        "name": "Henry Ford",
+        "job": "Product Manager",
+        "imagePath": "../assets/img/faces/clem-onojeghuo-3.jpg",
+        "description": "Teamwork is so important that it is virtually impossible for you to reach the heights of your capabilities or make the money that you want without becoming very good at it.",
+        "links": [
+          {
+            "path": "https://www.twitter.com",
+            "icon": "fa fa-twitter"
+          },
+          {
+            "path": "https://www.twitter.com",
+            "icon": "fa fa-google-plus"
+          },
+          {
+            "path": "https://www.twitter.com",
+            "icon": "fa fa-linkedin"
+          }
+        ]
+      },
+      {
+        "name": "Sophie West",
+        "job": "Designer",
+        "imagePath": "../assets/img/faces/joe-gardner-2.jpg",
+        "description": "A group becomes a team when each member is sure enough of himself and his contribution to praise the skill of the others. No one can whistle a symphony. It takes an orchestra to play it.",
+        "links": [
+          {
+            "path": "https://www.twitter.com",
+            "icon": "fa fa-twitter"
+          },
+          {
+            "path": "https://www.twitter.com",
+            "icon": "fa fa-linkedin"
+          }
+        ]
+      },
+      {
+        "name": "Robert Orben",
+        "job": "Developer",
+        "imagePath": "../assets/img/faces/erik-lucatero-2.jpg",
+        "description": "The strength of the team is each individual member. The strength of each member is the team. If you can laugh together, you can work together, silence isn’t golden, it’s deadly.",
+        "links": [
+          {
+            "path": "https://www.twitter.com",
+            "icon": "fa fa-google-plus"
+          },
+          {
+            "path": "https://www.twitter.com",
+            "icon": "fa fa-linkedin"
+          }
+        ]
+      }
+    ]
+  },
+  "projects": {},
+  "contact": {
+    "title": "Keep in touch?",
+    "textPlaceholder": "Tell us your thoughts and feelings...",
+    "btnMsg": "Send Message"
+  },
+  "footer": {
+    "links": [
+      {
+        "path": "https://www.twitter.com",
+        "name": "Blog"
+      }
+    ]
+  }
+}

@@ -1,18 +1,14 @@
 import React from 'react'
-
-// reactstrap components
 import {
   Card,
   Container,
   Row,
   Col,
-  Carousel as ReactCarousel,
+  Carousel,
   CarouselItem,
   CarouselIndicators,
   CarouselCaption,
 } from 'reactstrap'
-
-// core components
 
 const items = [
   {
@@ -32,7 +28,7 @@ const items = [
   },
 ]
 
-function Carousel() {
+function Projects() {
   const [activeIndex, setActiveIndex] = React.useState(0)
   const [animating, setAnimating] = React.useState(false)
   const onExiting = () => {
@@ -62,7 +58,7 @@ function Carousel() {
           <Row>
             <Col className="ml-auto mr-auto" md="8">
               <Card className="page-carousel">
-                <ReactCarousel activeIndex={activeIndex} next={next} previous={previous}>
+                <Carousel activeIndex={activeIndex} next={next} previous={previous}>
                   <CarouselIndicators
                     items={items}
                     activeIndex={activeIndex}
@@ -102,7 +98,7 @@ function Carousel() {
                     <span className="fa fa-angle-right" />
                     <span className="sr-only">Next</span>
                   </a>
-                </ReactCarousel>
+                </Carousel>
               </Card>
             </Col>
           </Row>
@@ -112,4 +108,4 @@ function Carousel() {
   )
 }
 
-export default Carousel
+export default Projects

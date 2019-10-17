@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
-
 import { Container, Row, Col } from 'reactstrap'
+import resume from '../assets/json/resume.json'
 
 const About = () => {
   document.documentElement.classList.remove('nav-open')
@@ -12,28 +12,25 @@ const About = () => {
   })
   return (
     <Container>
-      <div className="owner">
+      <div className="owner mt-6">
         <div className="avatar">
           <img
             alt="..."
             className="img-circle img-no-padding img-responsive"
-            src={require('assets/img/faces/joe-gardner-2.jpg')}
+            src={require('assets/img/profileImage.jpg')}
           />
         </div>
         <div className="name">
           <h4 className="title">
-            Jane Faker <br />
+            {resume.about.name}
+            <br />
           </h4>
-          <h6 className="description">Music Producer</h6>
+          <h6 className="description">{resume.about.job}</h6>
         </div>
       </div>
       <Row>
         <Col className="ml-auto mr-auto text-center" md="6">
-          <p>
-            An artist of considerable range, Jane Faker — the name taken by Melbourne-raised,
-            Brooklyn-based Nick Murphy — writes, performs and records all of his own music, giving
-            it a warm, intimate feel with a solid groove structure.
-          </p>
+          <p>{resume.about.description}</p>
         </Col>
       </Row>
     </Container>

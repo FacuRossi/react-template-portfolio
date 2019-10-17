@@ -1,9 +1,7 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
-// nodejs library that concatenates strings
 import classnames from 'classnames'
+import resume from '../assets/json/resume.json'
 
-// reactstrap components
 import {
   Collapse,
   NavbarBrand,
@@ -31,9 +29,7 @@ function Navbar() {
         setNavbarColor('navbar-transparent')
       }
     }
-
     window.addEventListener('scroll', updateNavbarColor)
-
     return function cleanup() {
       window.removeEventListener('scroll', updateNavbarColor)
     }
@@ -42,14 +38,8 @@ function Navbar() {
     <ReactNavbar className={classnames('fixed-top', navbarColor)} color-on-scroll="300" expand="lg">
       <Container>
         <div className="navbar-translate">
-          <NavbarBrand
-            data-placement="bottom"
-            to="/index"
-            target="_blank"
-            title="Coded by Creative Tim"
-            tag={Link}
-          >
-            Paper Kit 2
+          <NavbarBrand href={'#home'} data-placement="bottom">
+            {resume.navbar.headerTitle}
           </NavbarBrand>
           <button
             aria-expanded={navbarCollapse}
@@ -65,44 +55,15 @@ function Navbar() {
         </div>
         <Collapse className="justify-content-end" navbar isOpen={navbarCollapse}>
           <Nav navbar>
-            <NavItem>
-              <NavLink to="/index" tag={Link}>
-                <i className="nc-icon nc-layout-11" /> Components
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                data-placement="bottom"
-                href="https://twitter.com/"
-                target="_blank"
-                title="Follow us on Twitter"
-              >
-                <i className="fa fa-twitter" />
-                <p className="d-lg-none">Twitter</p>
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                data-placement="bottom"
-                href="https://www.instagram.com/"
-                target="_blank"
-                title="Follow us on LinkedIn"
-              >
-                <i className="fa fa-linkedin" />
-                <p className="d-lg-none">LinkedIn</p>
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink
-                data-placement="bottom"
-                href="https://www.github.com/"
-                target="_blank"
-                title="Star on GitHub"
-              >
-                <i className="fa fa-github" />
-                <p className="d-lg-none">GitHub</p>
-              </NavLink>
-            </NavItem>
+            {resume.navbar.headerLinks.map(link => {
+              return (
+                <NavItem key={link.name}>
+                  <NavLink data-placement="bottom" href={link.link}>
+                    {link.name}
+                  </NavLink>
+                </NavItem>
+              )
+            })}
           </Nav>
         </Collapse>
       </Container>

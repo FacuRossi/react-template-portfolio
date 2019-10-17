@@ -1,5 +1,6 @@
 import React from 'react'
 import { Row, Container } from 'reactstrap'
+import resume from '../assets/json/resume.json'
 
 function Footer() {
   return (
@@ -8,15 +9,19 @@ function Footer() {
         <Row>
           <nav className="footer-nav">
             <ul>
-              <li>
-                <a
-                  href="http://medium.com"
-                  // eslint-disable-next-line react/jsx-no-target-blank
-                  target="_blank"
-                >
-                  Blog
-                </a>
-              </li>
+              {resume.footer.links.map(el => {
+                return (
+                  <li key={el.name}>
+                    <a
+                      href={el.path}
+                      // eslint-disable-next-line react/jsx-no-target-blank
+                      target="_blank"
+                    >
+                      {el.name}
+                    </a>
+                  </li>
+                )
+              })}
             </ul>
           </nav>
           <div className="credits ml-auto">
