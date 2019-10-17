@@ -12,7 +12,8 @@ function Team() {
             <Col md={resume.team.sizeOfColumns} key={el.name}>
               <Card className="card-profile card-plain">
                 <div className="card-avatar">
-                  <img alt="..." src={el.imagePath} />
+                  {/* el.imagePath */}
+                  <img alt="..." src={require('assets/img/faces/clem-onojeghuo-3.jpg')} />
                 </div>
                 <CardBody>
                   <div className="author">
