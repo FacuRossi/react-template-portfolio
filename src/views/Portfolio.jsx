@@ -26,7 +26,7 @@ function Portfolio() {
         <div className="section section-dark text-center" id="about">
           <About />
         </div>
-        <div className="section section-dark text-center" id="company">
+        <div className="section section-dark text-center">
           <Company />
         </div>
         {/* <div className="section section-dark text-center" id="team">

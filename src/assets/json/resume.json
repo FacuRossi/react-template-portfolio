@@ -11,18 +11,6 @@
         "link": "#about"
       },
       {
-        "name": "Company",
-        "link": "#company"
-      },
-      {
-        "name": "Team",
-        "link": "#team"
-      },
-      {
-        "name": "Projects",
-        "link": "#projects"
-      },
-      {
         "name": "Contact",
         "link": "#contact"
       }
