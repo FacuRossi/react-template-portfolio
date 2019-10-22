@@ -29,33 +29,47 @@
     ]
   },
   "main": {
-    "title": "Company Name",
-    "subtitle": "Start designing your landing page here."
+    "title": "Facundo Rossi",
+    "subtitle": "I'm a full-stack web developer",
+    "links": [
+      {
+        "path": "https://twitter.com/FacuRossi4",
+        "icon": "fa fa-twitter"
+      },
+      {
+        "path": "https://github.com/FacuRossi",
+        "icon": "fa fa-github"
+      },
+      {
+        "path": "https://www.linkedin.com/in/facundo-rossi/",
+        "icon": "fa fa-linkedin"
+      }
+    ]
   },
   "about": {
-    "name": "Jane Faker",
-    "job": "Music Producer",
-    "description": "An artist of considerable range, Jane Faker — the name taken by Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and records all of his own music, giving it a warm, intimate feel with a solid groove structure."
+    "name": "Who's this guy?",
+    "job": "Software Engineer",
+    "description": "I'm a software engineer based in Córdoba, Argentina. I really enjoy the challenges my profession involves. I take it as a great opportunity to continuing growing as a person as well as professional."
   },
   "company": {
-    "title": "Let's talk the company",
-    "description": "This is the paragraph where you can write more details about your product. Keep you user engaged by providing meaningful information. Remember that by this time, the user is curious, otherwise he wouldn't scroll to get here. Add a button if you want the user to see more.",
+    "title": "Skills",
+    "description": "I keen on each aspect of building apps from design, develop, test and deliver software in order to accomplish user needs. I like to achieve high-quality websites and exceptional user experience.",
     "sizeOfColumns": 4,
     "knowledgeFields": [
       {
-        "name": "Web Development",
-        "icon": "nc-icon nc-album-2",
-        "description": "Spend your time generating new ideas. You don't have to think of implementing."
+        "name": "Frontend Development",
+        "icon": "nc-icon nc-html5",
+        "description": "I've worked on projects oriented towards the web environment and my skills are broad. I have experience with: React, Redux, Javascript, Html, Css, Sass, Webpack, Parcel, Lerna."
       },
       {
-        "name": "IoT",
-        "icon": "nc-icon nc-album-2",
-        "description": "Spend your time generating new ideas. You don't have to think of implementing."
+        "name": "Backend Development",
+        "icon": "nc-icon nc-atom",
+        "description": "I developed software with a wide variety of programming languages, frameworks, libraries, and tools like Java, Spring, EJB, JUnit, JPA, Maven, Elasticsearch, Kibana, Postman, Swagger, Node."
       },
       {
-        "name": "Machine Learning",
-        "icon": "nc-icon nc-album-2",
-        "description": "Larger, yet dramatically thinner. More powerful, but remarkably power efficient."
+        "name": "Continuous Integration",
+        "icon": "nc-icon nc-refresh-69",
+        "description": "I've got involved in DevOps and Continuous Integration tasks working with Jenkins, Artifactory, Docker, AWS, SonarQube for Manage product build lifecycle."
       }
     ]
   },

@@ -21,19 +21,19 @@ function Navbar() {
     document.documentElement.classList.toggle('nav-open')
   }
 
-  React.useEffect(() => {
-    const updateNavbarColor = () => {
-      if (document.documentElement.scrollTop > 299 || document.body.scrollTop > 299) {
-        setNavbarColor('')
-      } else if (document.documentElement.scrollTop < 300 || document.body.scrollTop < 300) {
-        setNavbarColor('navbar-transparent')
-      }
-    }
-    window.addEventListener('scroll', updateNavbarColor)
-    return function cleanup() {
-      window.removeEventListener('scroll', updateNavbarColor)
-    }
-  })
+  // React.useEffect(() => {
+  //   const updateNavbarColor = () => {
+  //     if (document.documentElement.scrollTop > 299 || document.body.scrollTop > 299) {
+  //       setNavbarColor('')
+  //     } else if (document.documentElement.scrollTop < 300 || document.body.scrollTop < 300) {
+  //       setNavbarColor('navbar-transparent')
+  //     }
+  //   }
+  //   window.addEventListener('scroll', updateNavbarColor)
+  //   return function cleanup() {
+  //     window.removeEventListener('scroll', updateNavbarColor)
+  //   }
+  // })
   return (
     <ReactNavbar className={classnames('fixed-top', navbarColor)} color-on-scroll="300" expand="lg">
       <Container>

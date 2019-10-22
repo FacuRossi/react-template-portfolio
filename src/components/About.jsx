@@ -30,7 +30,7 @@ const About = () => {
       </div>
       <Row>
         <Col className="ml-auto mr-auto text-center" md="6">
-          <p>{resume.about.description}</p>
+          <h5 className="description">{resume.about.description}</h5>
         </Col>
       </Row>
     </Container>

@@ -53,7 +53,7 @@ function Projects() {
   }
   return (
     <>
-      <div className="section pt-o" id="carousel">
+      <div className="section section-dark pt-o" id="carousel">
         <Container>
           <Row>
             <Col className="ml-auto mr-auto" md="8">

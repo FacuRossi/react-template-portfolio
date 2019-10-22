@@ -822,7 +822,7 @@
     -webkit-box-shadow: none;
     box-shadow: none;
     outline: 0 !important; }
-  .btn[class*="btn-outline-"] {
+  .btn[class*='btn-outline-'] {
     background-image: none;
     background-color: transparent; }
   .btn .nc-icon {
@@ -1333,7 +1333,7 @@
   min-width: 50px;
   padding: 13px; }
   .btn-just-icon.btn-lg i {
-    font-size: 18px;
+    font-size: 22px;
     padding: 0; }
 
 .btn-just-icon.btn-link {
@@ -6434,5 +6434,8 @@ td.rdtYear:hover {
   top: 1px;
   border-width: 0 .4rem .4rem .4rem;
   border-bottom-color: #fff; }
+
+.mt-6 {
+  margin-top: 6rem !important; }
 
 /*# sourceMappingURL=paper-kit.css.map */

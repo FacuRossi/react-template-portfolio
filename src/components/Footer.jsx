@@ -4,7 +4,7 @@ import resume from '../assets/json/resume.json'
 
 function Footer() {
   return (
-    <footer className="footer footer-black footer-white">
+    <footer className="footer footer-black footer-white section-dark">
       <Container>
         <Row>
           <nav className="footer-nav">

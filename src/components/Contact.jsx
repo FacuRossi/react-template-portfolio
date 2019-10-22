@@ -17,11 +17,11 @@ const Contact = () => {
     <Container>
       <Row>
         <Col className="ml-auto mr-auto" md="8">
-          <h2 className="text-center">{resume.contact.title}</h2>
+          <h2 className="title text-center">{resume.contact.title}</h2>
           <Form className="contact-form">
             <Row>
               <Col md="6">
-                <label>Name</label>
+                <label className="text-white">Name</label>
                 <InputGroup>
                   <InputGroupAddon addonType="prepend">
                     <InputGroupText>
@@ -32,7 +32,7 @@ const Contact = () => {
                 </InputGroup>
               </Col>
               <Col md="6">
-                <label>Email</label>
+                <label className="text-white">Email</label>
                 <InputGroup>
                   <InputGroupAddon addonType="prepend">
                     <InputGroupText>
@@ -43,7 +43,7 @@ const Contact = () => {
                 </InputGroup>
               </Col>
             </Row>
-            <label>Message</label>
+            <label className="text-white">Message</label>
             <Input placeholder={resume.contact.textPlaceholder} type="textarea" rows="4" />
             <Row>
               <Col className="ml-auto mr-auto" md="4">
